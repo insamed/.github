@@ -4,7 +4,8 @@
   <img src="https://img.shields.io/badge/license-proprietary-lightgrey" alt="License" />
 </p>
 
-## Insamed
+## Insamed Indonesia
+https://insamed.id/
 
 Multi-tenant SaaS point-of-sale platform built for healthcare businesses in Indonesia.
 
