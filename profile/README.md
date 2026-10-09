@@ -1,23 +1,35 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/status-in%20development-blue" alt="Status" />
-  <img src="https://img.shields.io/badge/platform-Indonesia-red" alt="Platform" />
-  <img src="https://img.shields.io/badge/license-proprietary-lightgrey" alt="License" />
+  <img src="https://img.shields.io/badge/status-in%20development-blue" alt="In development" />
+  <img src="https://img.shields.io/badge/built%20for-Indonesian%20pharmacies-red" alt="Built for Indonesian pharmacies" />
+  <img src="https://img.shields.io/badge/license-proprietary-lightgrey" alt="Proprietary software" />
 </p>
 
 ## Insamed Indonesia
-https://insamed.id/
 
-Multi-tenant SaaS point-of-sale platform built for healthcare businesses in Indonesia.
+**Pharmacy management for independent apotek and pharmacy chains in Indonesia.**
 
-We're starting with **Pharmacy** — OTC sales, prescription dispensing, batch-tracked inventory (FEFO), unit conversions, and patient management — then expanding to Clinic, Hospital, Independent Practice, Puskesmas, and Laboratory.
+Insamed brings sales, prescriptions, inventory, purchasing, and owner oversight into one application. We build around everyday pharmacy work, with familiar Indonesian terms and clear workflows for staff with different levels of software experience.
 
-### What we care about
+[Visit insamed.id](https://insamed.id/)
 
-- **Tenant isolation** — every business gets its own secure data boundary
-- **Immutable ledgers** — stock movements and payments are append-only, always auditable
-- **Modular by design** — tenants enable only the features they need
-- **Built for Indonesia** — IDR currency, Indonesian UI, local infrastructure
+### What we're building
 
-### Tech
+- **Sales and prescriptions** — OTC checkout, prescription dispensing, racikan, labels, receipts, and returns.
+- **Stock control** — batch and expiry tracking, FEFO allocation, unit conversions, branch transfers, and stock opname.
+- **Purchasing** — defekta, purchase orders, goods receiving, supplier invoices, and payments.
+- **Daily operations** — cash-register sessions, staff permissions, branch management, and reports.
+- **Account and platform administration** — onboarding, invitations, account recovery, and subscription management.
 
-Built on battle-tested, production-proven technologies — no experimental stacks or hype-driven choices. Strict type safety end-to-end, runtime validation at every boundary, and a modular monolith architecture that keeps things simple without sacrificing scalability. Designed to be maintainable by a small team and reliable enough for healthcare.
+### What guides the work
+
+- **Clear workflows:** readable screens, useful feedback, and ways to recover from mistakes.
+- **Scoped access:** pharmacy and branch boundaries, with permissions resolved on the server.
+- **Traceable records:** stock movements, payment records, and audit history preserve the record of changes.
+- **Exact money:** integer rupiah throughout financial calculations.
+- **Focused scope:** software for pharmacy operations, shaped by the people who use it.
+
+### Technology
+
+TypeScript, Next.js and React, NestJS with Fastify, PostgreSQL with Drizzle, Redis and BullMQ, and Zod validation. Vitest and Playwright support behavior and workflow checks.
+
+The application is a modular monolith in a Turborepo workspace, designed for a small team to maintain.
