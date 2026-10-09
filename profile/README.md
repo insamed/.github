@@ -1,35 +1,26 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/status-in%20development-blue" alt="In development" />
-  <img src="https://img.shields.io/badge/built%20for-Indonesian%20pharmacies-red" alt="Built for Indonesian pharmacies" />
-  <img src="https://img.shields.io/badge/license-proprietary-lightgrey" alt="Proprietary software" />
-</p>
+# Insamed Indonesia
 
-## Insamed Indonesia
+**A workspace for Indonesian pharmacies.**
 
-**Pharmacy management for independent apotek and pharmacy chains in Indonesia.**
+Insamed brings sales, inventory, prescriptions, purchasing, and teams into one system for independent apotek and pharmacy chains. Clear records help staff see what has happened, understand the current stage of work, and continue where the previous person left off.
 
-Insamed brings sales, prescriptions, inventory, purchasing, and owner oversight into one application. We build around everyday pharmacy work, with familiar Indonesian terms and clear workflows for staff with different levels of software experience.
+[Website](https://insamed.id/) · [Open Insamed](https://app.insamed.id/) · [Guides](https://insamed.id/panduan)
 
-[Visit insamed.id](https://insamed.id/)
+## Pharmacy operations
 
-### What we're building
+- **Sales and cash:** OTC checkout, payments, receipts, returns, and cash-register sessions.
+- **Inventory:** batch and expiry tracking, FEFO allocation, unit conversions, branch transfers, and stock opname.
+- **Prescriptions:** intake, racikan, dispensing, labels, and handover in a shared workflow.
+- **Purchasing and suppliers:** defekta, purchase orders, goods receiving, supplier invoices, and payments.
+- **Business oversight:** sales, margins, stock needing attention, and reports across branches.
+- **Teams:** access follows each person's role and assigned branches.
 
-- **Sales and prescriptions** — OTC checkout, prescription dispensing, racikan, labels, receipts, and returns.
-- **Stock control** — batch and expiry tracking, FEFO allocation, unit conversions, branch transfers, and stock opname.
-- **Purchasing** — defekta, purchase orders, goods receiving, supplier invoices, and payments.
-- **Daily operations** — cash-register sessions, staff permissions, branch management, and reports.
-- **Account and platform administration** — onboarding, invitations, account recovery, and subscription management.
+## Clear records, connected teams
 
-### What guides the work
+Transaction and stock records stay available for review. Drafts, goods receipts, and prescription handovers show distinct stages of work. Owners can follow each branch from a shared business view, while staff work with familiar Indonesian pharmacy terms.
 
-- **Clear workflows:** readable screens, useful feedback, and ways to recover from mistakes.
-- **Scoped access:** pharmacy and branch boundaries, with permissions resolved on the server.
-- **Traceable records:** stock movements, payment records, and audit history preserve the record of changes.
-- **Exact money:** integer rupiah throughout financial calculations.
-- **Focused scope:** software for pharmacy operations, shaped by the people who use it.
-
-### Technology
+## Technology
 
 TypeScript, Next.js and React, NestJS with Fastify, PostgreSQL with Drizzle, Redis and BullMQ, and Zod validation. Vitest and Playwright support behavior and workflow checks.
 
-The application is a modular monolith in a Turborepo workspace, designed for a small team to maintain.
+The application uses a modular monolith in a Turborepo workspace. Pharmacy and branch access is scoped on the server, financial calculations use integer rupiah, and stock movements, payments, and audit records preserve operational history.
